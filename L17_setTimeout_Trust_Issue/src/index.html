@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log("Start");
+
+            setTimeout(() => {
+                console.log("CB");
+            }, 5000);
+
+            console.log("End");
+
+            let startTime = new Date().getTime();
+            let endTime = 0;
+
+            while (endTime <= startTime + 10000) {
+                endTime = new Date().getTime();
+            }
+            console.log("Loop is over");
+        </script>
+    </body>
+</html>

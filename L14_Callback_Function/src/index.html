@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // callback function
+            setTimeout(() => {
+                console.log("timer");
+            }, 5000);
+
+            function y(x) {
+                console.log("function y is completed");
+                x();
+            }
+
+            y(function x() {
+                console.log("function x is completed");
+            });
+
+            // javascript is a synchronous single threaded language
+            // blocking the main thread
+            // power of call back
+            // deep about event listener
+            // closures demo with event listener
+            // scope demo with event listener
+            // garbage collection & removeEventListeners
+        </script>
+    </body>
+</html>
